@@ -14,7 +14,10 @@ html {
 }
 
 body {
-  background-color: aquamarine;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
   font-size: 16px;
 }
 
@@ -33,5 +36,43 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body main h1 {
+  color: white;
+}
+
+body main p {
+  color: white;
+}
+
+body main span {
+  color: #16070a;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
